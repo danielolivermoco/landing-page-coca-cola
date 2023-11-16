@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff1523;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 25px 100px;
+    align-items: center;
+    background: #121212;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0px 15px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+header a img {
+    max-width: 90px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 100px;
+    color: #fff;
+}
+
+.box-text {
+    max-width: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4rem;
+    position: relative;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+span {
+    font-size: 6rem;
+}
+
+p {
+    font-size: 1rem;
+    padding: 30px 0px;
+}
+
+.box-text a {
+    display: flex;
+    position: absolute;
+    padding: 10px 30px;
+    background: #fff;
+    top: 97%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.box-img {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    margin-top: 100px;
+}
+
+.box-img img {
+    max-width: 500px;
+}
+
+.thumb {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
+.thumb li {
+    position: relative;
+    margin: 0px -10px;
+}
+
+.thumb li img {
+    max-width: 90px;
+    filter: drop-shadow(2px 2px 2px #0000006e);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li img:hover {
+    transform: scale(1.3) translateY(-20px);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+    section header ul {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
